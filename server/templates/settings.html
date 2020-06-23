@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Usernames</h2>
+<p>Use the multiple attribute to allow the user to select more than one value.</p>
+
+<form action="{{ url_for('delete_usernames') }}" method="post">
+  <select name="usernames_delete" size={{ mconf.u_list_len }} multiple>
+    {% for user in mconf.username_list %}
+      <option value={{ user }}>{{ user }}</option>
+    {% endfor %}
+  </select>
+  <br>
+  <br>
+  <button type="submit">Delete</button>
+</form>
+<br>
+<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+<form action="{{ url_for('add_username') }}" method="post">
+  <input type="text" name="username_add">
+  <button type="submit">Add</button>
+</form>
+
+<h2>Hashtags</h2>
+<p>Use the multiple attribute to allow the user to select more than one value.</p>
+
+<form action="{{ url_for('delete_hashtags') }}" method="post">
+  <select name="hashtags_delete" size={{ mconf.h_list_len }} multiple>
+    {% for hashtag in mconf.hashtag_list %}
+      <option value={{ hashtag }}>{{ hashtag }}</option>
+    {% endfor %}
+  </select>
+  <br><br>
+  <button type="submit">Delete</button>
+</form>
+<br>
+<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+<form action="{{ url_for('add_hashtag') }}" method="post">
+  <input type="text" name="hashtag_add">
+  <button type="submit">Add</button>
+</form>
+
+<h2>Weather locations</h2>
+<p>Use the multiple attribute to allow the user to select more than one value.</p>
+
+<form action="{{ url_for('delete_wlocations') }}" method="post">
+  <select name="wlocation_delete" size={{ mconf.wl_list_len }} multiple>
+    {% for location in mconf.weatherLocation_list %}
+      <option value={{ location }}>{{ location }}</option>
+    {% endfor %}
+  </select>
+  <br><br>
+  <button type="submit">Delete</button>
+</form>
+<br>
+<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+<form action="{{ url_for('add_wlocation') }}" method="post">
+  <input type="text" name="wlocation_add">
+  <button type="submit">Add</button>
+</form>
+
+
+</body>
+</html>
