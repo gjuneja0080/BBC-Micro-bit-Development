@@ -1,0 +1,11 @@
+{
+  "name": "microbit-a3",
+  "version": "0.0.1",
+  "description": "Microbit A3 code",
+  "license": "MIT",
+  "dependencies": {
+    "microbit": "lancaster-university/microbit#v2.1.1"
+  },
+  "targetDependencies": {},
+  "bin": "./source"
+}
