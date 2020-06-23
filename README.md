@@ -1,5 +1,5 @@
 # CS3099 A-3 Group Project
-
+# THIS CODE USES PYTHON 3.7, THE DEPENDENCIES FOR WHICH HAVE NOT BEEN INCLUDED IN THIS REPOSITORY, AND WILL NEED TO BE INSTALLED FIRST TO IMPLEMENT THE CODE.
 ## Overview
 Micro:Bits connect to each other to exchange social information using the onboard radio, and can connect to the internet to retrieve social media notifications.
 A Micro:Bit being used by a person is referred to as a *active MB*.
@@ -39,6 +39,7 @@ When creating a merge request, ensure the following:
 - Interact using Django
 - DB backend is sqlite3, not stored in git
 - Ensure the below commands are run from the `/server` directory (cd `server` from repo root)
+
 
 ### Setup
 - Install latest dependencies: `pipenv install`
